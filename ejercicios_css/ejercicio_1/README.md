@@ -9,6 +9,6 @@ Usa esta sección para medir tu trabajo. No se evaluará una perfección de pixe
 
 - El Div 1 y el 3 tienen 32px entre su texto y su borde.
 - El Div 1 tiene 12px entre él y cualquier otro elemento en la página.
-- Hay un espacio de 48px entre el Div 1 y el 2.
+- Hay un espacio de 48px entre el Div 1 y el 3.
 - El Div 3 está alineado a la derecha.
 - La alineación del Div 3 se logra utilizando `margin` (y no float, flexbox, etc.).
