@@ -4,7 +4,7 @@ Editar el archivo `style.css` para que la página web luzca como la imagen de ab
 
 ![outcome](./desired-outcome.png)
 
-### Objetivos
+### Objetivos:
 Usa esta sección para medir tu trabajo. No se evaluará una perfección de pixeles, si no más bie el uso correcto de las propiedades de **padding** y **margin**.
 
 - El Div 1 y el 3 tienen 32px entre su texto y su borde.
