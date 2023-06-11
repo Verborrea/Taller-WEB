@@ -13,7 +13,7 @@
     <?php require 'partials/header.view.php' ?>
 
     <main>
-        <h2>Hola!</h2>
+        <h2>Información de contacto</h2>
         <p>Bienvenido</p>
     </main>
 
