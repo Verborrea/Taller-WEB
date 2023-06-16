@@ -1,13 +1,13 @@
 <?php
 
 require "functions.php";
+require "Database.php";
 
-// if (urlIs("/")) {
-//     require "controllers/index.php";
-// } else if (urlIs("/about")) {
-//     require "controllers/about.php";
-// } else if (urlIs("/contact")) {
-//     require "controllers/contact.php";
-// }
+$db = new Database;
 
-echo "hola";
+$usuario = $db->query('select * from profesores');
+
+foreach ($profes as $profesor) {
+    echo "<li> {$profesor['nombre']} </li>";
+}
+
