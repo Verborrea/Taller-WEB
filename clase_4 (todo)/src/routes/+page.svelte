@@ -42,7 +42,7 @@
 		list-style: none;
 		padding: 0;
 	}
-	form {
+	ul form {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
