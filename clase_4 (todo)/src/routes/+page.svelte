@@ -1,12 +1,12 @@
 <script>
-	import { todos } from '$lib/stores';
-	// let todos = []
+	import { todos, autoincrement } from '$lib/stores';
 
 	let new_todo
 
 	const crearTodo = (e) => {
+		$autoincrement = $autoincrement + 1;
 		$todos = [...$todos, {
-			id: todos.length + 1,
+			id: $autoincrement,
 			text: new_todo,
 			done: false
 		}]
@@ -24,9 +24,11 @@
 </form>
 
 <ul>
-	{#each $todos as todo}
+	{#each $todos as todo (todo.id)}
 		<li>
-			<form action="/" method="post">
+			<form on:submit|preventDefault={()=> {
+				$todos = $todos.filter(t => t.id !== todo.id)
+            }}>
 				<div class="izq">
 					<input type="checkbox" name="done" id={todo.id} checked={todo.done}>
 					<label for={todo.id}>{todo.text}</label>
